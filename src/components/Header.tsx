@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Menu, X, Flag } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { FlagBrazil, FlagSweden, FlagUk } from 'lucide-react';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -21,12 +22,12 @@ const Header = () => {
   const getLanguageFlag = (lang: string) => {
     switch (lang) {
       case 'pt':
-        return <Flag className="w-4 h-4 mr-2" />; // Brazilian flag
+        return <FlagBrazil className="w-4 h-4 mr-2" />;
       case 'sv':
-        return <Flag className="w-4 h-4 mr-2" />; // Swedish flag
+        return <FlagSweden className="w-4 h-4 mr-2" />;
       case 'en':
       default:
-        return <Flag className="w-4 h-4 mr-2" />; // UK flag
+        return <FlagUk className="w-4 h-4 mr-2" />;
     }
   };
 
@@ -45,20 +46,20 @@ const Header = () => {
         <div className="flex items-center space-x-2">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" className="flex items-center">
                 {getLanguageFlag(i18n.language)}
                 {i18n.language.toUpperCase()}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                <Flag className="w-4 h-4 mr-2" /> EN
+                <FlagUk className="w-4 h-4 mr-2" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                <Flag className="w-4 h-4 mr-2" /> PT
+                <FlagBrazil className="w-4 h-4 mr-2" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                <Flag className="w-4 h-4 mr-2" /> SV
+                <FlagSweden className="w-4 h-4 mr-2" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

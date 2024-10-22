@@ -22,11 +22,6 @@ const Hero = () => {
       alt: 'Digital Health Consulting 2'
     },
     {
-      type: 'video',
-      src: 'https://player.vimeo.com/external/368763065.sd.mp4?s=13b81d3f1a8757ca8c3d1d5f4d7d9e7f1e194a3e&profile_id=164&oauth2_token_id=57447761',
-      alt: 'Digital Health Video'
-    },
-    {
       type: 'image',
       src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
       alt: 'Digital Health Consulting 3'
@@ -53,27 +48,16 @@ const Hero = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative h-screen overflow-hidden">
-      <div className="embla" ref={emblaRef}>
+    <section className="relative h-screen min-h-[500px] overflow-hidden">
+      <div className="embla h-full" ref={emblaRef}>
         <div className="embla__container h-full">
           {slides.map((slide, index) => (
             <div key={index} className="embla__slide relative w-full h-full flex-[0_0_100%]">
-              {slide.type === 'image' ? (
-                <img 
-                  src={slide.src} 
-                  alt={slide.alt} 
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <video 
-                  src={slide.src} 
-                  className="w-full h-full object-cover"
-                  autoPlay 
-                  loop 
-                  muted 
-                  playsInline
-                />
-              )}
+              <img 
+                src={slide.src} 
+                alt={slide.alt} 
+                className="w-full h-full object-cover"
+              />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-center text-white max-w-3xl px-4">
                   <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">Consultoria Especializada em Saúde</h1>
@@ -83,7 +67,7 @@ const Hero = () => {
                   <Button 
                     size="lg" 
                     onClick={() => window.open('https://calendly.com/your-calendly-link', '_blank')}
-                    className="w-full sm:w-auto"
+                    className="w-full sm:w-auto text-lg py-6 px-8"
                   >
                     Agende uma consultoria
                   </Button>
@@ -94,18 +78,18 @@ const Hero = () => {
         </div>
       </div>
       <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full z-10"
         onClick={scrollPrev}
       >
         <ChevronLeft className="w-6 h-6 text-black" />
       </button>
       <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full z-10"
         onClick={scrollNext}
       >
         <ChevronRight className="w-6 h-6 text-black" />
       </button>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
