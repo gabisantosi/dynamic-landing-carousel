@@ -1,15 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, TrendingUp, FileText } from 'lucide-react';
+import { GitBranch, GitMerge, BarChart } from 'lucide-react';
 
 const Features = () => {
   const { t } = useTranslation();
 
   const features = [
-    { icon: Briefcase, title: 'featureTitle1', description: 'featureDescription1' },
-    { icon: FileText, title: 'featureTitle2', description: 'featureDescription2' },
-    { icon: TrendingUp, title: 'featureTitle3', description: 'featureDescription3' },
+    { icon: GitBranch, title: 'featureTitle1', description: 'featureDescription1' },
+    { icon: GitMerge, title: 'featureTitle2', description: 'featureDescription2' },
+    { icon: BarChart, title: 'featureTitle3', description: 'featureDescription3' },
   ];
 
   return (
