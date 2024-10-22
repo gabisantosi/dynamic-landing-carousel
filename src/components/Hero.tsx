@@ -26,9 +26,13 @@ const Hero = () => {
 
   useEffect(() => {
     if (!emblaApi) return;
+    
     onSelect();
     emblaApi.on('select', onSelect);
-    return () => emblaApi.off('select', onSelect);
+    
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
   }, [emblaApi, onSelect]);
 
   return (
