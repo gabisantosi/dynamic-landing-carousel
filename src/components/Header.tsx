@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Flag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -9,7 +9,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { FlagBrazil, FlagSweden, FlagUk } from 'lucide-react';
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -20,15 +19,7 @@ const Header = () => {
   };
 
   const getLanguageFlag = (lang: string) => {
-    switch (lang) {
-      case 'pt':
-        return <FlagBrazil className="w-4 h-4 mr-2" />;
-      case 'sv':
-        return <FlagSweden className="w-4 h-4 mr-2" />;
-      case 'en':
-      default:
-        return <FlagUk className="w-4 h-4 mr-2" />;
-    }
+    return <Flag className="w-4 h-4 mr-2" />;
   };
 
   return (
@@ -53,13 +44,13 @@ const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                <FlagUk className="w-4 h-4 mr-2" /> EN
+                <Flag className="w-4 h-4 mr-2" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                <FlagBrazil className="w-4 h-4 mr-2" /> PT
+                <Flag className="w-4 h-4 mr-2" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                <FlagSweden className="w-4 h-4 mr-2" /> SV
+                <Flag className="w-4 h-4 mr-2" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
