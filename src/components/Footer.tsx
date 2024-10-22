@@ -1,9 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-800 text-white py-8">
@@ -23,12 +25,21 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('contactUs')}</h3>
-            <p className="text-gray-300">contact@kuresaude.com</p>
+            <p className="text-gray-300">info@kuresaude.com</p>
             <p className="text-gray-300">+1 (123) 456-7890</p>
+            <a 
+              href="https://www.linkedin.com/company/kure-saude/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-flex items-center text-gray-300 hover:text-white mt-2"
+            >
+              <Linkedin className="w-5 h-5 mr-2" />
+              LinkedIn
+            </a>
           </div>
         </div>
         <div className="mt-8 text-center">
-          <p className="text-gray-300">&copy; 2024 Kure saúde. {t('allRightsReserved')}</p>
+          <p className="text-gray-300">&copy; 2022-{currentYear} Kure saúde. {t('allRightsReserved')}</p>
         </div>
       </div>
     </footer>
