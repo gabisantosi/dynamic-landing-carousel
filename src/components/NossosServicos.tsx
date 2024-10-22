@@ -23,7 +23,7 @@ const NossosServicos = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+    <section className="py-16 bg-gradient-to-br from-blue-50 via-[#478EA7]/10 to-purple-50">
       <div className="container mx-auto px-4">
         <motion.h2 
           className="text-4xl font-bold text-center mb-12 text-gray-800"
@@ -43,14 +43,14 @@ const NossosServicos = () => {
             >
               <Card className="h-full hover:shadow-lg transition-shadow duration-300 bg-white bg-opacity-80 backdrop-blur-sm">
                 <CardHeader>
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                    <servico.icon className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-[#478EA7]/20 rounded-full flex items-center justify-center mb-4">
+                    <servico.icon className="w-8 h-8 text-[#478EA7]" />
                   </div>
                   <CardTitle className="text-xl font-semibold text-gray-800">{servico.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">{servico.description}</p>
-                  <a href="#" className="text-blue-600 hover:text-blue-800 inline-flex items-center">
+                  <a href="#" className="text-[#478EA7] hover:text-[#478EA7]/80 inline-flex items-center">
                     Saiba mais <ArrowRight className="ml-2 w-4 h-4" />
                   </a>
                 </CardContent>
