@@ -7,7 +7,7 @@ const NossosServicos = () => {
     {
       icon: Briefcase,
       title: 'Gestão de Projetos Tradicional',
-      description: 'Metodologias clássicas incluindo PM2, PM3, PMBOK e PRINCE2. Oferecemos expertise em planejamento estruturado, controle rigoroso e documentação detalhada para projetos complexos e de larga escala.'
+      description: 'Metodologias clássicas incluindo PM² (PM Square), PM3, PMBOK e PRINCE2. Oferecemos expertise em planejamento estruturado, controle rigoroso e documentação detalhada para projetos complexos e de larga escala.'
     },
     {
       icon: GraduationCap,
