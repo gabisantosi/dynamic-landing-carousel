@@ -41,10 +41,12 @@ const Header = () => {
           <Link to="/" className="text-gray-600 hover:text-blue-600">{t('home')}</Link>
           <Link to="/about" className="text-gray-600 hover:text-blue-600">{t('about')}</Link>
           <Link to="/contact" className="text-gray-600 hover:text-blue-600">{t('contact')}</Link>
+        </nav>
+        <div className="flex items-center space-x-2">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline">
-                {getLanguageFlag(i18n.language)} {t('language')}
+              <Button variant="outline" size="sm">
+                {getLanguageFlag(i18n.language)}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
@@ -59,9 +61,7 @@ const Header = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-        </nav>
-        <div className="md:hidden">
-          <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X /> : <Menu />}
           </Button>
         </div>
@@ -72,24 +72,6 @@ const Header = () => {
             <Link to="/" className="text-gray-600 hover:text-blue-600">{t('home')}</Link>
             <Link to="/about" className="text-gray-600 hover:text-blue-600">{t('about')}</Link>
             <Link to="/contact" className="text-gray-600 hover:text-blue-600">{t('contact')}</Link>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="w-full">
-                  {getLanguageFlag(i18n.language)} {t('language')}
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                  🇬🇧 English
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                  🇧🇷 Português
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                  🇸🇪 Svenska
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </nav>
         </div>
       )}
