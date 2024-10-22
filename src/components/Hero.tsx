@@ -13,9 +13,9 @@ const Hero = () => {
   const { t } = useTranslation();
 
   const images = [
-    'https://source.unsplash.com/random/1600x900/?health',
-    'https://source.unsplash.com/random/1600x900/?medical',
-    'https://source.unsplash.com/random/1600x900/?healthcare',
+    'https://source.unsplash.com/random/1600x900/?digital+health',
+    'https://source.unsplash.com/random/1600x900/?telemedicine',
+    'https://source.unsplash.com/random/1600x900/?health+technology',
   ];
 
   return (
@@ -25,7 +25,7 @@ const Hero = () => {
           {images.map((image, index) => (
             <CarouselItem key={index} className="w-full h-full">
               <div className="relative w-full h-full">
-                <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
+                <img src={image} alt={`Digital Health Consulting ${index + 1}`} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                   <div className="text-center text-white">
                     <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('heroTitle')}</h1>
