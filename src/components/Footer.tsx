@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Linkedin } from 'lucide-react';
+import { Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -26,16 +26,24 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('contactUs')}</h3>
             <p className="text-gray-300">info@kuresaude.com</p>
-            <p className="text-gray-300">+1 (123) 456-7890</p>
-            <a 
-              href="https://www.linkedin.com/company/kure-saude/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="inline-flex items-center text-gray-300 hover:text-white mt-2"
-            >
-              <Linkedin className="w-5 h-5 mr-2" />
-              LinkedIn
-            </a>
+            <div className="flex space-x-4 mt-2">
+              <a 
+                href="https://www.linkedin.com/company/kure-saude/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center text-gray-300 hover:text-white"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://www.facebook.com/kuresaude/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center text-gray-300 hover:text-white"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="mt-8 text-center">
