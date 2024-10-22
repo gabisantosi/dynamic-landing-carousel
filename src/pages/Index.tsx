@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import NossosServicos from '../components/NossosServicos';
 import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import ClientLogos from '../components/ClientLogos';
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <NossosServicos />
         <Features />
         <ClientLogos />
         <Testimonials />
