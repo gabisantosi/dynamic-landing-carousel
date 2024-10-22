@@ -21,27 +21,31 @@ const Header = () => {
   const getLanguageFlag = (lang: string) => {
     switch (lang) {
       case 'pt':
-        return 'https://cdn.pixabay.com/photo/2012/04/10/23/01/brazil-26584_1280.png';
+        return 'https://flagcdn.com/w40/br.png';
       case 'sv':
-        return 'https://cdn.pixabay.com/photo/2012/04/10/23/03/sweden-26881_1280.png';
+        return 'https://flagcdn.com/w40/se.png';
       case 'en':
       default:
-        return 'https://cdn.pixabay.com/photo/2012/04/10/16/22/united-26177_1280.png';
+        return 'https://flagcdn.com/w40/gb.png';
     }
   };
 
-  const FlagImage = ({ lang }: { lang: string }) => (
-    <img
-      src={getLanguageFlag(lang)}
-      alt={lang.toUpperCase()}
-      className="w-5 h-5 mr-2"
-      onError={(e) => {
-        e.currentTarget.onerror = null;
-        e.currentTarget.style.display = 'none';
-        e.currentTarget.nextElementSibling?.classList.remove('hidden');
-      }}
-    />
-  );
+  const FlagImage = ({ lang }: { lang: string }) => {
+    const [imageError, setImageError] = React.useState(false);
+
+    if (imageError) {
+      return <Flag className="w-5 h-5 mr-2" />;
+    }
+
+    return (
+      <img
+        src={getLanguageFlag(lang)}
+        alt={lang.toUpperCase()}
+        className="w-5 h-5 mr-2"
+        onError={() => setImageError(true)}
+      />
+    );
+  };
 
   return (
     <header className="bg-white shadow-sm">
@@ -60,22 +64,18 @@ const Header = () => {
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm" className="flex items-center">
                 <FlagImage lang={i18n.language} />
-                <Flag className="w-5 h-5 mr-2 hidden" />
                 <span>{i18n.language.toUpperCase()}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                <FlagImage lang="en" />
-                <Flag className="w-5 h-5 mr-2 hidden" /> EN
+                <FlagImage lang="en" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                <FlagImage lang="pt" />
-                <Flag className="w-5 h-5 mr-2 hidden" /> PT
+                <FlagImage lang="pt" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                <FlagImage lang="sv" />
-                <Flag className="w-5 h-5 mr-2 hidden" /> SV
+                <FlagImage lang="sv" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
