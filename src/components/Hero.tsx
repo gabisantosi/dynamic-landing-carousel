@@ -11,7 +11,7 @@ const Hero = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const images = [
-    'https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
+    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
     'https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
     'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
   ];
@@ -48,11 +48,15 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-center text-white max-w-3xl px-4">
-                  <h1 className="text-4xl md:text-6xl font-bold mb-4">Consultoria Especializada em Saúde</h1>
-                  <p className="text-xl md:text-2xl mb-8">
+                  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">Consultoria Especializada em Saúde</h1>
+                  <p className="text-lg md:text-xl lg:text-2xl mb-8">
                     Oferecemos soluções de consultoria personalizada em saúde digital, tecnologia e inovação para otimizar o processo e melhorar a qualidade dos serviços.
                   </p>
-                  <Button size="lg" onClick={() => window.open('https://calendly.com/your-calendly-link', '_blank')}>
+                  <Button 
+                    size="lg" 
+                    onClick={() => window.open('https://calendly.com/your-calendly-link', '_blank')}
+                    className="w-full sm:w-auto"
+                  >
                     Agende uma consultoria
                   </Button>
                 </div>
