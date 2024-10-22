@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Heart, Users, TrendingUp } from 'lucide-react';
+import { Briefcase, TrendingUp, FileText } from 'lucide-react';
 
 const Features = () => {
   const { t } = useTranslation();
 
   const features = [
-    { icon: Heart, title: 'featureTitle1', description: 'featureDescription1' },
-    { icon: Users, title: 'featureTitle2', description: 'featureDescription2' },
+    { icon: Briefcase, title: 'featureTitle1', description: 'featureDescription1' },
+    { icon: FileText, title: 'featureTitle2', description: 'featureDescription2' },
     { icon: TrendingUp, title: 'featureTitle3', description: 'featureDescription3' },
   ];
 
