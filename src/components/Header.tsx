@@ -21,12 +21,12 @@ const Header = () => {
   const getLanguageFlag = (lang: string) => {
     switch (lang) {
       case 'pt':
-        return '🇧🇷';
+        return <Flag className="w-4 h-4 mr-2" />; // Brazilian flag
       case 'sv':
-        return '🇸🇪';
+        return <Flag className="w-4 h-4 mr-2" />; // Swedish flag
       case 'en':
       default:
-        return '🇬🇧';
+        return <Flag className="w-4 h-4 mr-2" />; // UK flag
     }
   };
 
@@ -46,19 +46,19 @@ const Header = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm">
-                <Flag className="w-4 h-4 mr-2" />
                 {getLanguageFlag(i18n.language)}
+                {i18n.language.toUpperCase()}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                🇬🇧 English
+                <Flag className="w-4 h-4 mr-2" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                🇧🇷 Português
+                <Flag className="w-4 h-4 mr-2" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                🇸🇪 Svenska
+                <Flag className="w-4 h-4 mr-2" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
