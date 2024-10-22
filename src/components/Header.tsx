@@ -18,6 +18,18 @@ const Header = () => {
     i18n.changeLanguage(lng);
   };
 
+  const getLanguageFlag = (lang: string) => {
+    switch (lang) {
+      case 'pt':
+        return '🇧🇷';
+      case 'sv':
+        return '🇸🇪';
+      case 'en':
+      default:
+        return '🇬🇧';
+    }
+  };
+
   return (
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -31,12 +43,20 @@ const Header = () => {
           <Link to="/contact" className="text-gray-600 hover:text-blue-600">{t('contact')}</Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline">{t('language')}</Button>
+              <Button variant="outline">
+                {getLanguageFlag(i18n.language)} {t('language')}
+              </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => changeLanguage('en')}>English</DropdownMenuItem>
-              <DropdownMenuItem onClick={() => changeLanguage('pt')}>Português</DropdownMenuItem>
-              <DropdownMenuItem onClick={() => changeLanguage('sv')}>Svenska</DropdownMenuItem>
+              <DropdownMenuItem onClick={() => changeLanguage('en')}>
+                🇬🇧 English
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => changeLanguage('pt')}>
+                🇧🇷 Português
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => changeLanguage('sv')}>
+                🇸🇪 Svenska
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>
@@ -54,12 +74,20 @@ const Header = () => {
             <Link to="/contact" className="text-gray-600 hover:text-blue-600">{t('contact')}</Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="w-full">{t('language')}</Button>
+                <Button variant="outline" className="w-full">
+                  {getLanguageFlag(i18n.language)} {t('language')}
+                </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent>
-                <DropdownMenuItem onClick={() => changeLanguage('en')}>English</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => changeLanguage('pt')}>Português</DropdownMenuItem>
-                <DropdownMenuItem onClick={() => changeLanguage('sv')}>Svenska</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('en')}>
+                  🇬🇧 English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('pt')}>
+                  🇧🇷 Português
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('sv')}>
+                  🇸🇪 Svenska
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>

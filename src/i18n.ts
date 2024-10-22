@@ -13,7 +13,7 @@ i18n
       pt: { translation: ptTranslations },
       sv: { translation: svTranslations },
     },
-    lng: 'en',
+    lng: 'pt', // Definindo português como idioma padrão
     fallbackLng: 'en',
     interpolation: {
       escapeValue: false,
