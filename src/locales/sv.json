@@ -22,5 +22,12 @@
   "quickLinks": "Snabblänkar",
   "contactUs": "Kontakta oss",
   "allRightsReserved": "Alla rättigheter förbehållna.",
-  "ourClients": "Våra kunder"
+  "ourClients": "Våra kunder",
+  "resultsTitle": "Våra Resultat",
+  "result1Title": "Genomförda Projekt",
+  "result1Description": "Över 100 digitala hälsoprojekt framgångsrikt levererade",
+  "result2Title": "Operativ Effektivitet",
+  "result2Description": "30% genomsnittlig ökning av operativ effektivitet för kunder",
+  "result3Title": "Kostnadsbesparingar",
+  "result3Description": "25% genomsnittlig minskning av projektkostnader"
 }

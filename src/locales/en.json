@@ -22,5 +22,12 @@
   "quickLinks": "Quick Links",
   "contactUs": "Contact Us",
   "allRightsReserved": "All rights reserved.",
-  "ourClients": "Our Clients"
+  "ourClients": "Our Clients",
+  "resultsTitle": "Our Results",
+  "result1Title": "Completed Projects",
+  "result1Description": "Over 100 digital health projects successfully delivered",
+  "result2Title": "Operational Efficiency",
+  "result2Description": "30% average increase in operational efficiency for clients",
+  "result3Title": "Cost Savings",
+  "result3Description": "25% average reduction in project implementation costs"
 }
