@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Flag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -30,6 +30,19 @@ const Header = () => {
     }
   };
 
+  const FlagImage = ({ lang }: { lang: string }) => (
+    <img
+      src={getLanguageFlag(lang)}
+      alt={lang.toUpperCase()}
+      className="w-5 h-5 mr-2"
+      onError={(e) => {
+        e.currentTarget.onerror = null;
+        e.currentTarget.style.display = 'none';
+        e.currentTarget.nextElementSibling?.classList.remove('hidden');
+      }}
+    />
+  );
+
   return (
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -46,19 +59,23 @@ const Header = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm" className="flex items-center">
-                <img src={getLanguageFlag(i18n.language)} alt={i18n.language} className="w-5 h-5 mr-2" />
+                <FlagImage lang={i18n.language} />
+                <Flag className="w-5 h-5 mr-2 hidden" />
                 <span>{i18n.language.toUpperCase()}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                <img src={getLanguageFlag('en')} alt="EN" className="w-5 h-5 mr-2" /> EN
+                <FlagImage lang="en" />
+                <Flag className="w-5 h-5 mr-2 hidden" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                <img src={getLanguageFlag('pt')} alt="PT" className="w-5 h-5 mr-2" /> PT
+                <FlagImage lang="pt" />
+                <Flag className="w-5 h-5 mr-2 hidden" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                <img src={getLanguageFlag('sv')} alt="SV" className="w-5 h-5 mr-2" /> SV
+                <FlagImage lang="sv" />
+                <Flag className="w-5 h-5 mr-2 hidden" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
