@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Menu, X, Flag } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -19,7 +19,15 @@ const Header = () => {
   };
 
   const getLanguageFlag = (lang: string) => {
-    return <Flag className="w-4 h-4 mr-2" />;
+    switch (lang) {
+      case 'pt':
+        return '🇧🇷';
+      case 'sv':
+        return '🇸🇪';
+      case 'en':
+      default:
+        return '🇬🇧';
+    }
   };
 
   return (
@@ -39,18 +47,18 @@ const Header = () => {
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm" className="flex items-center">
                 {getLanguageFlag(i18n.language)}
-                {i18n.language.toUpperCase()}
+                <span className="ml-2">{i18n.language.toUpperCase()}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                <Flag className="w-4 h-4 mr-2" /> EN
+                🇬🇧 EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                <Flag className="w-4 h-4 mr-2" /> PT
+                🇧🇷 PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                <Flag className="w-4 h-4 mr-2" /> SV
+                🇸🇪 SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
