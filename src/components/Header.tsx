@@ -21,12 +21,12 @@ const Header = () => {
   const getLanguageFlag = (lang: string) => {
     switch (lang) {
       case 'pt':
-        return '/images/flags/brazil.png';
+        return 'https://cdn.pixabay.com/photo/2012/04/10/23/01/brazil-26584_1280.png';
       case 'sv':
-        return '/images/flags/sweden.png';
+        return 'https://cdn.pixabay.com/photo/2012/04/10/23/03/sweden-26881_1280.png';
       case 'en':
       default:
-        return '/images/flags/uk.png';
+        return 'https://cdn.pixabay.com/photo/2012/04/10/16/22/united-26177_1280.png';
     }
   };
 
@@ -52,13 +52,13 @@ const Header = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                <img src="/images/flags/uk.png" alt="EN" className="w-5 h-5 mr-2" /> EN
+                <img src={getLanguageFlag('en')} alt="EN" className="w-5 h-5 mr-2" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                <img src="/images/flags/brazil.png" alt="PT" className="w-5 h-5 mr-2" /> PT
+                <img src={getLanguageFlag('pt')} alt="PT" className="w-5 h-5 mr-2" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                <img src="/images/flags/sweden.png" alt="SV" className="w-5 h-5 mr-2" /> SV
+                <img src={getLanguageFlag('sv')} alt="SV" className="w-5 h-5 mr-2" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
