@@ -31,11 +31,13 @@ const Hero = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('heroTitle')}</h1>
-                    <p className="text-xl md:text-2xl mb-8">{t('heroSubtitle')}</p>
+                  <div className="text-center text-white max-w-3xl px-4">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Consultoria Especializada em Saúde</h1>
+                    <p className="text-xl md:text-2xl mb-8">
+                      Oferecemos soluções de consultoria personalizada em saúde digital, tecnologia e inovação para otimizar o processo e melhorar a qualidade dos serviços.
+                    </p>
                     <Button size="lg" onClick={() => window.open('https://calendly.com/your-calendly-link', '_blank')}>
-                      {t('scheduleDemo')}
+                      Agende uma consultoria
                     </Button>
                   </div>
                 </div>
