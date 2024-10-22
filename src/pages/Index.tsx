@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
+import ClientLogos from '../components/ClientLogos';
 import Footer from '../components/Footer';
 import { useTranslation } from 'react-i18next';
 
@@ -15,6 +16,7 @@ const Index = () => {
       <main>
         <Hero />
         <Features />
+        <ClientLogos />
         <Testimonials />
       </main>
       <Footer />
