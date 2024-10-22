@@ -35,12 +35,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <img src="https://i.ibb.co/FBXpxxw/logo.png" alt="Kure saúde" className="h-10 w-auto" />
-          <span className="text-xl font-semibold text-gray-800">Kure Saúde</span>
+          <span className="text-xl font-semibold text-[#478EA7]">Kure Saúde</span>
         </Link>
         <nav className="hidden md:flex space-x-4">
-          <Link to="/" className="text-gray-600 hover:text-blue-600">{t('home')}</Link>
-          <Link to="/about" className="text-gray-600 hover:text-blue-600">{t('about')}</Link>
-          <Link to="/contact" className="text-gray-600 hover:text-blue-600">{t('contact')}</Link>
+          <Link to="/" className="text-gray-600 hover:text-[#478EA7]">{t('home')}</Link>
+          <Link to="/about" className="text-gray-600 hover:text-[#478EA7]">{t('about')}</Link>
+          <Link to="/contact" className="text-gray-600 hover:text-[#478EA7]">{t('contact')}</Link>
         </nav>
         <div className="flex items-center space-x-2">
           <DropdownMenu>
@@ -69,9 +69,9 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col space-y-2 px-4 py-2">
-            <Link to="/" className="text-gray-600 hover:text-blue-600">{t('home')}</Link>
-            <Link to="/about" className="text-gray-600 hover:text-blue-600">{t('about')}</Link>
-            <Link to="/contact" className="text-gray-600 hover:text-blue-600">{t('contact')}</Link>
+            <Link to="/" className="text-gray-600 hover:text-[#478EA7]">{t('home')}</Link>
+            <Link to="/about" className="text-gray-600 hover:text-[#478EA7]">{t('about')}</Link>
+            <Link to="/contact" className="text-gray-600 hover:text-[#478EA7]">{t('contact')}</Link>
           </nav>
         </div>
       )}
