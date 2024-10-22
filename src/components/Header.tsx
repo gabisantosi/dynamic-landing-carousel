@@ -21,12 +21,12 @@ const Header = () => {
   const getLanguageFlag = (lang: string) => {
     switch (lang) {
       case 'pt':
-        return '🇧🇷';
+        return '/images/flags/brazil.png';
       case 'sv':
-        return '🇸🇪';
+        return '/images/flags/sweden.png';
       case 'en':
       default:
-        return '🇬🇧';
+        return '/images/flags/uk.png';
     }
   };
 
@@ -46,19 +46,19 @@ const Header = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm" className="flex items-center">
-                {getLanguageFlag(i18n.language)}
-                <span className="ml-2">{i18n.language.toUpperCase()}</span>
+                <img src={getLanguageFlag(i18n.language)} alt={i18n.language} className="w-5 h-5 mr-2" />
+                <span>{i18n.language.toUpperCase()}</span>
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem onClick={() => changeLanguage('en')}>
-                🇬🇧 EN
+                <img src="/images/flags/uk.png" alt="EN" className="w-5 h-5 mr-2" /> EN
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('pt')}>
-                🇧🇷 PT
+                <img src="/images/flags/brazil.png" alt="PT" className="w-5 h-5 mr-2" /> PT
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => changeLanguage('sv')}>
-                🇸🇪 SV
+                <img src="/images/flags/sweden.png" alt="SV" className="w-5 h-5 mr-2" /> SV
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
