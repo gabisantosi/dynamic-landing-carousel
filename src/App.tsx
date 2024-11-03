@@ -11,7 +11,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <BrowserRouter>
+      <BrowserRouter basename="/dynamic-landing-carousel">
         <Routes>
           <Route path="/" element={<Index />} />
           {/* Add more routes as needed */}
