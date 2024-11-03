@@ -18,7 +18,7 @@ const Hero = () => {
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1600&h=900&q=80',
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&h=900&q=80',
       alt: 'Digital Healthcare Solutions'
     },
     {
