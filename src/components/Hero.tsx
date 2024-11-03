@@ -13,18 +13,18 @@ const Hero = () => {
   const slides = [
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Digital Health Consulting 1'
+      src: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=1600&h=900&q=80',
+      alt: 'Modern Healthcare Professional'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Digital Health Consulting 2'
+      src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1600&h=900&q=80',
+      alt: 'Digital Healthcare Solutions'
     },
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Digital Health Consulting 3'
+      src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1600&h=900&q=80',
+      alt: 'Healthcare Technology'
     },
   ];
 
@@ -60,16 +60,18 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                 <div className="text-center text-white max-w-3xl px-4">
-                  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">Consultoria Especializada em Saúde</h1>
+                  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
+                    {t('heroTitle')}
+                  </h1>
                   <p className="text-lg md:text-xl lg:text-2xl mb-8">
-                    Oferecemos soluções de consultoria personalizada em saúde digital, tecnologia e inovação para otimizar o processo e melhorar a qualidade dos serviços.
+                    {t('heroSubtitle')}
                   </p>
                   <Button 
                     size="lg" 
                     onClick={() => window.open('https://calendly.com/your-calendly-link', '_blank')}
                     className="w-full sm:w-auto text-lg py-6 px-8"
                   >
-                    Agende uma consultoria
+                    {t('scheduleDemo')}
                   </Button>
                 </div>
               </div>
