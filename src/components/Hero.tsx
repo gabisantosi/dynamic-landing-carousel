@@ -13,8 +13,8 @@ const Hero = () => {
   const slides = [
     {
       type: 'image',
-      src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Modern Healthcare Professional'
+      src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&h=900&q=80',
+      alt: 'Modern Healthcare Team'
     },
     {
       type: 'image',
