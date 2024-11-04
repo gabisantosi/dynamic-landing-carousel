@@ -51,7 +51,7 @@ const Header = () => {
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Kure saúde" className="h-10 w-auto" />
+          <img src="https://i.ibb.co/TH1yvv8/kure-logo.png" alt="Kure saúde" className="h-10 w-auto" />
           <span className="text-xl font-semibold text-[#478EA7]">Kure Saúde</span>
         </Link>
         <nav className="hidden md:flex space-x-4">
