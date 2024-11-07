@@ -8,6 +8,11 @@
   status = 200
 
 [[headers]]
-  for = "/assets/*"
+  for = "/*.js"
+  [headers.values]
+    Content-Type = "application/javascript"
+
+[[headers]]
+  for = "/assets/*.js"
   [headers.values]
     Content-Type = "application/javascript"
