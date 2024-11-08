@@ -59,18 +59,18 @@ const Hero = () => {
                 alt={slide.alt} 
                 className="w-full h-full object-cover opacity-90"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent backdrop-blur-[2px] flex items-center justify-start">
-                <div className="text-left max-w-2xl px-8 md:px-16 space-y-6">
-                  <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/60 to-black/60 backdrop-blur-[2px] flex items-center justify-center">
+                <div className="text-center max-w-2xl px-8 space-y-6">
+                  <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight font-['Space_Grotesk']">
                     {t('heroTitle')}
                   </h1>
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl">
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl font-light tracking-wide">
                     {t('heroSubtitle')}
                   </p>
                   <Button 
                     size="lg" 
                     onClick={() => setIsCalendarOpen(true)}
-                    className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 mt-4"
+                    className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 mt-4 text-lg px-8 py-6 rounded-full"
                   >
                     {t('scheduleDemo')}
                   </Button>
