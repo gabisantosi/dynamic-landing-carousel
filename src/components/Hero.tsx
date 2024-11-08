@@ -60,11 +60,11 @@ const Hero = () => {
                 className="w-full h-full object-cover opacity-90"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/60 to-black/60 backdrop-blur-[2px] flex items-center justify-center">
-                <div className="text-center max-w-2xl px-8 space-y-6">
+                <div className="text-center max-w-3xl px-8 space-y-6">
                   <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight">
                     {t('heroTitle')}
                   </h1>
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl font-light tracking-wide">
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto font-light tracking-wide whitespace-normal">
                     {t('heroSubtitle')}
                   </p>
                   <Button 
