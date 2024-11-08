@@ -61,10 +61,10 @@ const Hero = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/60 to-black/60 backdrop-blur-[2px] flex items-center justify-center">
                 <div className="text-center max-w-3xl px-8 space-y-6">
-                  <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight tracking-tight">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight whitespace-nowrap">
                     {t('heroTitle')}
                   </h1>
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto font-light tracking-wide whitespace-normal">
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto font-light tracking-wide">
                     {t('heroSubtitle')}
                   </p>
                   <Button 
