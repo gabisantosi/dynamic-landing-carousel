@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, GraduationCap, Cog, ArrowRight } from 'lucide-react';
+import { Briefcase, GraduationCap, Cog } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const NossosServicos = () => {
@@ -49,10 +49,7 @@ const NossosServicos = () => {
                   <CardTitle className="text-xl font-semibold text-gray-800">{servico.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 mb-4">{servico.description}</p>
-                  <a href="#" className="text-[#478EA7] hover:text-[#478EA7]/80 inline-flex items-center">
-                    Saiba mais <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  <p className="text-gray-600">{servico.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
