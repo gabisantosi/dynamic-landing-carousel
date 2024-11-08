@@ -31,19 +31,17 @@ const About = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative w-full md:w-1/2 max-w-md group"
+              className="relative w-full md:w-1/2 max-w-xl group"
             >
               <div className="absolute inset-0 bg-[#478EA7]/20 transform -rotate-6 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
               <div className="absolute inset-0 bg-[#478EA7]/10 transform rotate-3 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
                 alt="Claudia Silva - CEO"
-                className="relative rounded-lg shadow-sm w-full object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0"
+                className="relative rounded-lg shadow-sm w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0"
                 style={{
-                  aspectRatio: '3/4',
+                  maxHeight: '500px',
                   objectFit: 'cover',
-                  filter: 'contrast(1.1) brightness(1.05)',
-                  maxHeight: '600px',
                 }}
               />
             </motion.div>
