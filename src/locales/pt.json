@@ -29,5 +29,11 @@
   "result2Title": "Eficiência Operacional",
   "result2Description": "30% de aumento médio na eficiência operacional para clientes",
   "result3Title": "Economia de Custos",
-  "result3Description": "25% de redução média nos custos de implementação de projetos"
+  "result3Description": "25% de redução média nos custos de implementação de projetos",
+  "blog": "Blog",
+  "cases": "Cases",
+  "faq": "FAQ",
+  "readMore": "Ler mais",
+  "darkMode": "Modo escuro",
+  "lightMode": "Modo claro"
 }

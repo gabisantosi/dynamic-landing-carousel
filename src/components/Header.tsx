@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Menu, X, Flag, ImageIcon } from 'lucide-react';
+import { Menu, X, Flag, ImageIcon, Sun, Moon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTheme } from '@/components/theme-provider';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -63,6 +64,7 @@ const Logo = () => {
 const Header = () => {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const { theme, setTheme } = useTheme();
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -72,23 +74,37 @@ const Header = () => {
   const emailSubject = 'Contato via Site Kure Saúde';
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-background border-b border-border">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <Logo />
-          <span className="text-xl font-semibold text-[#478EA7]">Kure Saúde</span>
+          <span className="text-xl font-semibold text-primary">Kure Saúde</span>
         </Link>
         <nav className="hidden md:flex space-x-4">
-          <Link to="/" className="text-gray-600 hover:text-[#478EA7]">{t('home')}</Link>
-          <Link to="/about" className="text-gray-600 hover:text-[#478EA7]">{t('about')}</Link>
+          <Link to="/" className="text-foreground hover:text-primary transition-colors">{t('home')}</Link>
+          <Link to="/about" className="text-foreground hover:text-primary transition-colors">{t('about')}</Link>
+          <Link to="/cases" className="text-foreground hover:text-primary transition-colors">Cases</Link>
+          <Link to="/blog" className="text-foreground hover:text-primary transition-colors">Blog</Link>
+          <Link to="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</Link>
           <a 
             href={`mailto:${emailAddresses}?subject=${encodeURIComponent(emailSubject)}`}
-            className="text-gray-600 hover:text-[#478EA7]"
+            className="text-foreground hover:text-primary transition-colors"
           >
             {t('contact')}
           </a>
         </nav>
         <div className="flex items-center space-x-2">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          >
+            {theme === "light" ? (
+              <Moon className="h-5 w-5" />
+            ) : (
+              <Sun className="h-5 w-5" />
+            )}
+          </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="sm" className="flex items-center">
@@ -116,11 +132,14 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col space-y-2 px-4 py-2">
-            <Link to="/" className="text-gray-600 hover:text-[#478EA7]">{t('home')}</Link>
-            <Link to="/about" className="text-gray-600 hover:text-[#478EA7]">{t('about')}</Link>
+            <Link to="/" className="text-foreground hover:text-primary transition-colors">{t('home')}</Link>
+            <Link to="/about" className="text-foreground hover:text-primary transition-colors">{t('about')}</Link>
+            <Link to="/cases" className="text-foreground hover:text-primary transition-colors">Cases</Link>
+            <Link to="/blog" className="text-foreground hover:text-primary transition-colors">Blog</Link>
+            <Link to="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</Link>
             <a 
               href={`mailto:${emailAddresses}?subject=${encodeURIComponent(emailSubject)}`}
-              className="text-gray-600 hover:text-[#478EA7]"
+              className="text-foreground hover:text-primary transition-colors"
             >
               {t('contact')}
             </a>
