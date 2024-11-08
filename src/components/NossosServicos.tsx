@@ -12,7 +12,7 @@ const NossosServicos = () => {
     },
     {
       icon: GraduationCap,
-      title: 'Educação de Produto',
+      title: 'Gestão de Produto',
       description: 'Capacitação e treinamento em gestão de produtos digitais na área da saúde, focando em metodologias ágeis, design thinking e desenvolvimento centrado no usuário.'
     },
     {
