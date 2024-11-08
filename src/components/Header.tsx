@@ -70,8 +70,13 @@ const Header = () => {
     i18n.changeLanguage(lng);
   };
 
-  const emailAddresses = 'gabrielasilva@kuresaude.com,claudiasilva@kuresaude.com';
+  const emailAddresses = ['gabrielasilva@kuresaude.com', 'claudiasilva@kuresaude.com'];
   const emailSubject = 'Contato via Site Kure Saúde';
+
+  const handleEmailClick = () => {
+    const mailtoLink = `mailto:${emailAddresses.join(',')}?subject=${encodeURIComponent(emailSubject)}`;
+    window.location.href = mailtoLink;
+  };
 
   return (
     <header className="bg-background border-b border-border">
@@ -86,12 +91,12 @@ const Header = () => {
           <Link to="/cases" className="text-foreground hover:text-primary transition-colors">Cases</Link>
           <Link to="/blog" className="text-foreground hover:text-primary transition-colors">Blog</Link>
           <Link to="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</Link>
-          <a 
-            href={`mailto:${emailAddresses}?subject=${encodeURIComponent(emailSubject)}`}
-            className="text-foreground hover:text-primary transition-colors"
+          <button 
+            onClick={handleEmailClick}
+            className="text-foreground hover:text-primary transition-colors cursor-pointer"
           >
             {t('contact')}
-          </a>
+          </button>
         </nav>
         <div className="flex items-center space-x-2">
           <Button
@@ -137,12 +142,12 @@ const Header = () => {
             <Link to="/cases" className="text-foreground hover:text-primary transition-colors">Cases</Link>
             <Link to="/blog" className="text-foreground hover:text-primary transition-colors">Blog</Link>
             <Link to="/faq" className="text-foreground hover:text-primary transition-colors">FAQ</Link>
-            <a 
-              href={`mailto:${emailAddresses}?subject=${encodeURIComponent(emailSubject)}`}
-              className="text-foreground hover:text-primary transition-colors"
+            <button 
+              onClick={handleEmailClick}
+              className="text-foreground hover:text-primary transition-colors cursor-pointer text-left"
             >
               {t('contact')}
-            </a>
+            </button>
           </nav>
         </div>
       )}
