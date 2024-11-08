@@ -38,13 +38,13 @@ const About = () => {
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
                 alt="Claudia Silva - CEO"
-                className="relative rounded-lg shadow-2xl w-full object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0 transition-all duration-500"
+                className="relative rounded-lg shadow-2xl w-full object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0"
                 style={{
                   aspectRatio: '3/4',
                   objectFit: 'cover',
                   filter: 'contrast(1.1) brightness(1.05)',
-                  maxHeight: '400px', // Reduzindo a altura máxima
-                  width: 'auto', // Mantendo a proporção
+                  maxHeight: '600px',
+                  width: 'auto',
                 }}
               />
             </motion.div>
