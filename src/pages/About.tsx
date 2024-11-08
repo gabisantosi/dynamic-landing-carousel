@@ -21,9 +21,11 @@ const About = () => {
             className="text-center mb-16"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-[#478EA7] mb-4">
-              Kure Saúde
+              Uma Visão Transformadora para a Saúde Digital
             </h1>
-            <div className="w-24 h-1 bg-[#478EA7] mx-auto rounded-full"></div>
+            <h2 className="text-2xl text-[#478EA7] font-light">
+              Inovação e liderança na transformação digital da saúde
+            </h2>
           </motion.div>
 
           <div className="flex flex-col md:flex-row gap-6 items-center mb-16">
@@ -77,7 +79,6 @@ const About = () => {
                 <span>Conecte-se no LinkedIn</span>
               </a>
             </motion.div>
-
           </div>
 
           <motion.div 
@@ -149,7 +150,6 @@ const About = () => {
               </CardContent>
             </Card>
           </motion.div>
-
         </article>
       </main>
       <Footer />
