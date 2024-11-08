@@ -44,7 +44,6 @@ const About = () => {
                   objectFit: 'cover',
                   filter: 'contrast(1.1) brightness(1.05)',
                   maxHeight: '600px',
-                  width: 'auto',
                 }}
               />
             </motion.div>
