@@ -21,12 +21,18 @@ const About = () => {
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
                 alt="Claudia Silva - CEO"
-                className="rounded-lg shadow-lg w-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+                className="rounded-lg shadow-lg w-full object-cover transition-all duration-300"
                 style={{
-                  filter: 'brightness(1.1)',
+                  filter: 'grayscale(100%) contrast(1.2) brightness(1.1)',
                   aspectRatio: '3/4',
                   objectFit: 'cover',
                   backgroundColor: 'transparent'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.filter = 'none';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.filter = 'grayscale(100%) contrast(1.2) brightness(1.1)';
                 }}
               />
             </div>
