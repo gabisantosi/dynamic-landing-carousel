@@ -26,7 +26,7 @@ const About = () => {
             <div className="w-24 h-1 bg-[#478EA7] mx-auto rounded-full"></div>
           </motion.div>
 
-          <div className="flex flex-col md:flex-row gap-8 items-center mb-16">
+          <div className="flex flex-col md:flex-row gap-6 items-center mb-16">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -38,7 +38,7 @@ const About = () => {
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
                 alt="Claudia Silva - CEO"
-                className="relative rounded-lg shadow-[0_20px_50px_rgba(0,0,0,0.3)] w-full object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0 filter"
+                className="relative rounded-lg shadow-md w-full object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0 filter"
                 style={{
                   aspectRatio: '3/4',
                   objectFit: 'cover',
@@ -77,6 +77,7 @@ const About = () => {
                 <span>Conecte-se no LinkedIn</span>
               </a>
             </motion.div>
+
           </div>
 
           <motion.div 
@@ -148,6 +149,7 @@ const About = () => {
               </CardContent>
             </Card>
           </motion.div>
+
         </article>
       </main>
       <Footer />
