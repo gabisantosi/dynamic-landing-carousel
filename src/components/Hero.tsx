@@ -42,7 +42,10 @@ const Hero = () => {
     if (!emblaApi) return;
     onSelect();
     emblaApi.on('select', onSelect);
-    return () => emblaApi.off('select', onSelect);
+    
+    return () => {
+      if (emblaApi) emblaApi.off('select', onSelect);
+    };
   }, [emblaApi, onSelect]);
 
   return (
