@@ -19,13 +19,13 @@ const About = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
             <img
               src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
-              alt="Claudia Santos Silva - CEO"
-              className="rounded-lg shadow-lg w-full md:w-1/2 max-w-md object-cover"
+              alt="Claudia Silva - CEO"
+              className="rounded-lg shadow-lg w-full md:w-1/3 max-w-sm object-cover"
             />
             
             <div className="space-y-6">
               <h2 className="text-3xl font-semibold text-gray-800">
-                Claudia Santos Silva
+                Claudia Silva
               </h2>
               <p className="text-xl text-gray-600 font-light">
                 CEO & Fundadora da Kure Saúde
