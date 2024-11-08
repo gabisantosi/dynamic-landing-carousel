@@ -19,7 +19,7 @@ const CalendarModal = ({ isOpen, onClose }: CalendarModalProps) => {
         </DialogHeader>
         <div className="w-full aspect-[4/3]">
           <iframe 
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1RwPX4ZDRz_nQWqBqh8ykGYzHZ5DGk_mJ8GkM7ZXJ2aWNlc0BrdXJlLmNvbS5icg?gv=true"
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2KN-0Gt-sPYZ8aMwlViHH4otiHnINif0kG65Tjdsx2VD37amhnd8U7e8XZQajcRdJnmHuMcX2k?gv=true"
             style={{ border: 0 }}
             width="100%"
             height="100%"
