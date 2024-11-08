@@ -20,7 +20,7 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-5xl md:text-6xl font-bold text-[#478EA7] mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#478EA7] mb-4 whitespace-nowrap">
               Kure Saúde
             </h1>
             <div className="w-32 h-1 bg-[#478EA7] mx-auto mb-4"></div>
@@ -57,8 +57,8 @@ const About = () => {
                 <h2 className="text-4xl font-bold text-gray-800 mb-2">
                   Claudia Silva
                 </h2>
-                <p className="text-2xl text-[#478EA7] font-light mb-4">
-                  CEO & Fundadora da Kure Saúde
+                <p className="text-xl md:text-2xl text-[#478EA7] font-light mb-4 whitespace-nowrap">
+                  Revolucionando a Saúde Digital
                 </p>
               </div>
               <p className="text-lg text-gray-600 italic">
