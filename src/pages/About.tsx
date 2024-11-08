@@ -21,11 +21,9 @@ const About = () => {
             className="text-center mb-16"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-[#478EA7] mb-4">
-              Uma Visão Transformadora para a Saúde Digital
+              Kure Saúde
             </h1>
-            <h2 className="text-2xl text-[#478EA7] font-light">
-              Inovação e liderança na transformação digital da saúde
-            </h2>
+            <div className="w-32 h-1 bg-[#478EA7] mx-auto mb-4"></div>
           </motion.div>
 
           <div className="flex flex-col md:flex-row gap-6 items-center mb-16">
@@ -88,9 +86,12 @@ const About = () => {
           >
             <Card className="mb-12 overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-6 text-gray-800 border-b border-[#478EA7] pb-4">
-                  Inovação e liderança na transformação digital da saúde
+                <h3 className="text-3xl font-bold mb-6 text-gray-800">
+                  Uma Visão Transformadora para a Saúde Digital
                 </h3>
+                <h4 className="text-2xl text-[#478EA7] mb-6">
+                  Inovação e liderança na transformação digital da saúde
+                </h4>
                 <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
                   <p>
                     Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
