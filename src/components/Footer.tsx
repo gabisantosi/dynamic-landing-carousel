@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('contactUs')}</h3>
-            <p className="text-gray-300">info@kuresaude.com</p>
+            <p className="text-gray-300">claudiasilva@kuresaude.com</p>
             <div className="flex space-x-4 mt-2">
               <a 
                 href="https://www.linkedin.com/company/kure-saude/" 
