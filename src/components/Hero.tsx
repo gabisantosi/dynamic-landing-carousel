@@ -16,17 +16,23 @@ const Hero = () => {
     {
       type: 'image',
       src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Modern Healthcare Team'
+      alt: 'Modern Healthcare Team',
+      title: 'heroTitle',
+      subtitle: 'heroSubtitle'
     },
     {
       type: 'image',
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Digital Healthcare Solutions'
+      alt: 'Digital Healthcare Solutions',
+      title: 'heroTitle2',
+      subtitle: 'heroSubtitle2'
     },
     {
       type: 'image',
       src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1600&h=900&q=80',
-      alt: 'Healthcare Technology'
+      alt: 'Healthcare Technology',
+      title: 'heroTitle3',
+      subtitle: 'heroSubtitle3'
     },
   ];
 
@@ -62,10 +68,10 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/60 to-black/60 backdrop-blur-[2px] flex items-center justify-center">
                 <div className="text-center max-w-[90%] lg:max-w-6xl mx-auto px-4 space-y-6">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight whitespace-nowrap">
-                    {t('heroTitle')}
+                    {t(slide.title)}
                   </h1>
                   <p className="text-lg md:text-xl text-white/90 leading-relaxed whitespace-nowrap mx-auto">
-                    {t('heroSubtitle')}
+                    {t(slide.subtitle)}
                   </p>
                   <Button 
                     size="lg" 
