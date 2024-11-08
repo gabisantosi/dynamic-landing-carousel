@@ -31,7 +31,7 @@ const About = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="relative w-full md:w-1/2 max-w-xl group"
+              className="relative w-full md:w-3/4 max-w-md group"
             >
               <div className="absolute inset-0 bg-[#478EA7]/20 transform -rotate-6 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
               <div className="absolute inset-0 bg-[#478EA7]/10 transform rotate-3 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
@@ -40,7 +40,7 @@ const About = () => {
                 alt="Claudia Silva - CEO"
                 className="relative rounded-lg shadow-sm w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-105 [filter:grayscale(100%)] hover:[filter:grayscale(0%)]"
                 style={{
-                  maxHeight: '500px',
+                  maxHeight: '400px',
                   objectFit: 'cover',
                 }}
               />
