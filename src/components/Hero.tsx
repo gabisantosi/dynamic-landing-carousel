@@ -40,17 +40,13 @@ const Hero = () => {
 
   useEffect(() => {
     if (!emblaApi) return;
-    
     onSelect();
     emblaApi.on('select', onSelect);
-    
-    return () => {
-      emblaApi.off('select', onSelect);
-    };
+    return () => emblaApi.off('select', onSelect);
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative h-screen min-h-[500px] overflow-hidden">
+    <section className="relative h-[70vh] min-h-[400px] overflow-hidden bg-gradient-to-b from-blue-50/80 to-white/90">
       <div className="embla h-full" ref={emblaRef}>
         <div className="embla__container h-full">
           {slides.map((slide, index) => (
@@ -58,20 +54,20 @@ const Hero = () => {
               <img 
                 src={slide.src} 
                 alt={slide.alt} 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover opacity-90"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                <div className="text-center text-white max-w-3xl px-4">
-                  <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
+              <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent backdrop-blur-[2px] flex items-center justify-start">
+                <div className="text-left max-w-2xl px-8 md:px-16 space-y-6">
+                  <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
                     {t('heroTitle')}
                   </h1>
-                  <p className="text-lg md:text-xl lg:text-2xl mb-8">
+                  <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-xl">
                     {t('heroSubtitle')}
                   </p>
                   <Button 
                     size="lg" 
                     onClick={() => setIsCalendarOpen(true)}
-                    className="w-full sm:w-auto text-lg py-6 px-8"
+                    className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 mt-4"
                   >
                     {t('scheduleDemo')}
                   </Button>
@@ -81,29 +77,32 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      
       <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full z-10"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-md p-3 rounded-full z-10 transition-all duration-300"
         onClick={scrollPrev}
       >
-        <ChevronLeft className="w-6 h-6 text-black" />
+        <ChevronLeft className="w-5 h-5 text-white" />
       </button>
       <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full z-10"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-md p-3 rounded-full z-10 transition-all duration-300"
         onClick={scrollNext}
       >
-        <ChevronRight className="w-6 h-6 text-black" />
+        <ChevronRight className="w-5 h-5 text-white" />
       </button>
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+      
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full ${
-              index === selectedIndex ? 'bg-white' : 'bg-white bg-opacity-50'
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === selectedIndex ? 'bg-white w-6' : 'bg-white/50 hover:bg-white/70'
             }`}
             onClick={() => emblaApi && emblaApi.scrollTo(index)}
           />
         ))}
       </div>
+      
       <CalendarModal 
         isOpen={isCalendarOpen}
         onClose={() => setIsCalendarOpen(false)}
