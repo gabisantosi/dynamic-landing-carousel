@@ -18,7 +18,7 @@ const About = () => {
           
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
             <img
-              src="https://media.licdn.com/dms/image/C4D03AQGwGJFcvLhWQw/profile-displayphoto-shrink_800_800/0/1516889955768?e=1716422400&v=beta&t=_Hs0Hs_Hs0Hs_Hs0Hs_Hs0Hs_Hs0Hs_Hs0Hs"
+              src="https://media.licdn.com/dms/image/C4D03AQGwGJFcvLhWQw/profile-displayphoto-shrink_800_800/0/1516889955768"
               alt="Claudia Santos Silva - CEO"
               className="rounded-lg shadow-lg w-full md:w-1/2 max-w-md object-cover"
             />
