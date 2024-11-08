@@ -44,24 +44,26 @@ const About = () => {
           <Card className="mb-8">
             <CardContent className="p-6">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-                Uma Visão Transformadora para a Saúde Digital
+                Do Rio de Janeiro para o Mundo
               </h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
-                  Claudia Santos Silva tem liderado a revolução na saúde digital brasileira através da Kure Saúde. 
-                  Sua jornada começou com um propósito claro: tornar a saúde mais acessível e eficiente através 
-                  da tecnologia.
+                  Fundada no Rio de Janeiro, Brasil, a Kure Saúde nasceu com uma visão clara de 
+                  transformar a saúde digital brasileira. Sob a liderança visionária de Claudia Santos Silva, 
+                  a empresa rapidamente se estabeleceu como referência no mercado nacional e agora está 
+                  expandindo suas operações internacionalmente, com foco inicial no mercado europeu.
                 </p>
                 <p>
-                  Como CEO e fundadora, Claudia combina sua expertise em gestão de projetos com uma profunda 
-                  compreensão das necessidades do setor de saúde. Sua abordagem inovadora tem sido fundamental 
-                  para desenvolver soluções que realmente fazem a diferença na vida das pessoas.
+                  Com a recente mudança estratégica da CEO para a Suécia, a Kure Saúde está 
+                  estabelecendo uma forte presença no mercado escandinavo, trazendo soluções inovadoras 
+                  que combinam a experiência brasileira em saúde digital com as melhores práticas do 
+                  sistema de saúde nórdico.
                 </p>
                 <p>
-                  Sob sua liderança, a Kure Saúde tem se destacado no mercado de healthtech, implementando 
-                  projetos que não apenas melhoram a eficiência operacional, mas também transformam a experiência 
-                  do paciente e dos profissionais de saúde.
+                  Esta expansão internacional marca um novo capítulo na história da empresa, 
+                  possibilitando parcerias estratégicas com instituições de saúde europeias e o 
+                  desenvolvimento de projetos que beneficiam tanto o mercado brasileiro quanto o 
+                  internacional.
                 </p>
               </div>
             </CardContent>
@@ -70,24 +72,27 @@ const About = () => {
           <Card>
             <CardContent className="p-6">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-                Compromisso com a Excelência
+                Projetos Internacionais
               </h3>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  A visão de Claudia para a Kure Saúde é baseada em três pilares fundamentais: inovação 
-                  tecnológica, excelência em gestão de projetos e foco no cliente. Esta abordagem tem 
-                  permitido que a empresa desenvolva soluções que realmente atendem às necessidades do 
-                  mercado de saúde.
+                  Nossa presença internacional tem se fortalecido através de projetos inovadores que 
+                  conectam diferentes realidades da saúde global. A expertise desenvolvida no Brasil, 
+                  combinada com a eficiência dos sistemas de saúde escandinavos, tem permitido à 
+                  Kure Saúde criar soluções verdadeiramente globais.
                 </p>
                 <p>
-                  Sua liderança é marcada por uma combinação única de pensamento estratégico e execução 
-                  prática, sempre mantendo o foco em resultados mensuráveis e impacto positivo para todos 
-                  os stakeholders envolvidos.
+                  Entre nossos projetos internacionais mais recentes, destacam-se parcerias com 
+                  hospitais suecos para implementação de sistemas de telemedicina avançados, 
+                  colaborações com startups de healthtech europeias e o desenvolvimento de 
+                  plataformas multilíngues que facilitam o intercâmbio de conhecimentos entre 
+                  profissionais de saúde de diferentes países.
                 </p>
                 <p>
-                  Além de sua atuação como CEO, Claudia é uma defensora ativa da transformação digital na 
-                  saúde, compartilhando frequentemente seus conhecimentos e experiências em eventos do setor 
-                  e contribuindo para o desenvolvimento do ecossistema de healthtech no Brasil.
+                  Nossa visão é continuar expandindo nossa presença global, mantendo o compromisso 
+                  com a excelência e inovação que nos trouxe até aqui, sempre buscando criar 
+                  soluções que possam beneficiar pacientes e profissionais de saúde em qualquer 
+                  parte do mundo.
                 </p>
               </div>
             </CardContent>
