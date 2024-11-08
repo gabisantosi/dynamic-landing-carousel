@@ -58,7 +58,7 @@ const About = () => {
                   Claudia Silva
                 </h2>
                 <p className="text-xl md:text-2xl text-[#478EA7] font-light mb-4 whitespace-nowrap">
-                  Revolucionando a Saúde Digital
+                  CEO & Fundadora da Kure Saúde
                 </p>
               </div>
               <p className="text-lg text-gray-600 italic">
