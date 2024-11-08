@@ -86,10 +86,10 @@ const About = () => {
           >
             <Card className="mb-12 overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-6 text-gray-800">
-                  Uma Visão Transformadora para a Saúde Digital
+                <h3 className="text-3xl font-bold mb-6 text-gray-800 border-b border-[#478EA7] pb-4">
+                  Inovação e liderança na transformação digital da saúde
                 </h3>
-                <div className="space-y-6 text-gray-600 leading-relaxed">
+                <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
                   <p>
                     Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
                     Claudia Santos Silva tem liderado a revolução na saúde digital brasileira através da 
