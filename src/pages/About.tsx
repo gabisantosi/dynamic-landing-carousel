@@ -44,9 +44,49 @@ const About = () => {
           <Card className="mb-8">
             <CardContent className="p-6">
               <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-                Do Rio de Janeiro para o Mundo
+                Uma Visão Transformadora para a Saúde Digital
               </h3>
               <div className="space-y-4 text-gray-600">
+                <p>
+                  Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
+                  Claudia Santos Silva tem liderado a revolução na saúde digital brasileira através da 
+                  Kure Saúde. Sua jornada começou com um propósito claro: tornar a saúde mais acessível 
+                  e eficiente através da tecnologia.
+                </p>
+                <p>
+                  Como CEO e fundadora, Claudia combina sua expertise em gestão de projetos com uma 
+                  profunda compreensão das necessidades do setor de saúde. Sua abordagem inovadora tem 
+                  sido fundamental para desenvolver soluções que realmente fazem a diferença na vida das pessoas.
+                </p>
+                <p>
+                  Sob sua liderança, a Kure Saúde tem se destacado no mercado de healthtech, implementando 
+                  projetos que não apenas melhoram a eficiência operacional, mas também transformam a 
+                  experiência do paciente e dos profissionais de saúde.
+                </p>
+
+                <h4 className="text-xl font-semibold mt-6 mb-4 text-gray-800">
+                  Compromisso com a Excelência
+                </h4>
+                <p>
+                  A visão de Claudia para a Kure Saúde é baseada em três pilares fundamentais: inovação 
+                  tecnológica, excelência em gestão de projetos e foco no cliente. Esta abordagem tem 
+                  permitido que a empresa desenvolva soluções que realmente atendem às necessidades do 
+                  mercado de saúde.
+                </p>
+                <p>
+                  Sua liderança é marcada por uma combinação única de pensamento estratégico e execução 
+                  prática, sempre mantendo o foco em resultados mensuráveis e impacto positivo para todos 
+                  os stakeholders envolvidos.
+                </p>
+                <p>
+                  Além de sua atuação como CEO, Claudia é uma defensora ativa da transformação digital na 
+                  saúde, compartilhando frequentemente seus conhecimentos e experiências em eventos do setor 
+                  e contribuindo para o desenvolvimento do ecossistema de healthtech no Brasil.
+                </p>
+
+                <h4 className="text-xl font-semibold mt-6 mb-4 text-gray-800">
+                  Do Rio de Janeiro para o Mundo
+                </h4>
                 <p>
                   Fundada no Rio de Janeiro, Brasil, a Kure Saúde nasceu com uma visão clara de 
                   transformar a saúde digital brasileira. Sob a liderança visionária de Claudia Santos Silva, 
