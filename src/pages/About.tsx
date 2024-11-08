@@ -13,7 +13,7 @@ const About = () => {
       <main className="container mx-auto px-4 py-12">
         <article className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-[#478EA7] mb-8 text-center">
-            {t('about')}
+            Kure Saúde
           </h1>
           
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
