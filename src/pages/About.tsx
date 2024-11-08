@@ -25,7 +25,7 @@ const About = () => {
             </h1>
             <div className="w-24 h-1 bg-[#478EA7] mx-auto rounded-full"></div>
           </motion.div>
-          
+
           <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
@@ -86,9 +86,12 @@ const About = () => {
           >
             <Card className="mb-12 overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-6 text-gray-800 border-b border-[#478EA7] pb-4">
+                <h3 className="text-3xl font-bold mb-2 text-gray-800 border-b border-[#478EA7] pb-4">
                   Uma Visão Transformadora para a Saúde Digital
                 </h3>
+                <p className="text-xl text-[#478EA7] italic mb-6">
+                  Inovação e excelência na transformação digital da saúde
+                </p>
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                   <p className="text-lg">
                     Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
