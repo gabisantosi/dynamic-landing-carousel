@@ -1,24 +1,24 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Briefcase, GraduationCap, Cog } from 'lucide-react';
+import { Stethoscope, GraduationCap, Briefcase } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const NossosServicos = () => {
   const servicos = [
     {
-      icon: Briefcase,
-      title: 'Gestão de Projetos',
-      description: 'Metodologias clássicas incluindo PM², PM3, PMBOK e PRINCE2. Oferecemos expertise em planejamento estruturado, controle rigoroso e documentação detalhada para projetos complexos e de larga escala.'
+      icon: Stethoscope,
+      title: 'Consultoria em Saúde Digital',
+      description: 'Auxiliamos organizações de saúde na transformação digital, implementação de tecnologias e otimização de processos para melhorar a experiência do paciente e a eficiência operacional.'
     },
     {
       icon: GraduationCap,
-      title: 'Educação e Aprendizado de Produto',
-      description: 'Programas de capacitação abrangentes focados no desenvolvimento de habilidades essenciais em gestão de produtos. Desde conceitos fundamentais até técnicas avançadas de análise de mercado e definição de estratégias de produto.'
+      title: 'Educação de Produto',
+      description: 'Capacitação e treinamento em gestão de produtos digitais na área da saúde, focando em metodologias ágeis, design thinking e desenvolvimento centrado no usuário.'
     },
     {
-      icon: Cog,
-      title: 'Gestão de Produto Ágil',
-      description: 'Abordagem completa do ciclo de vida do produto, desde o Product Discovery até a implementação. Incluímos práticas de Design Sprint, Lean Startup, Scrum e Kanban para desenvolvimento iterativo e entrega contínua de valor.'
+      icon: Briefcase,
+      title: 'Gestão de Projetos em Saúde',
+      description: 'Gerenciamento especializado de projetos na área da saúde, utilizando metodologias ágeis e tradicionais para garantir a entrega eficiente de soluções digitais.'
     }
   ];
 
