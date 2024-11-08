@@ -43,6 +43,8 @@ const About = () => {
                   aspectRatio: '3/4',
                   objectFit: 'cover',
                   filter: 'contrast(1.1) brightness(1.05)',
+                  maxHeight: '400px', // Reduzindo a altura máxima
+                  width: 'auto', // Mantendo a proporção
                 }}
               />
             </motion.div>
