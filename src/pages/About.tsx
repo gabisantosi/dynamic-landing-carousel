@@ -17,11 +17,19 @@ const About = () => {
           </h1>
           
           <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
-            <img
-              src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
-              alt="Claudia Silva - CEO"
-              className="rounded-lg shadow-lg w-full md:w-1/3 max-w-sm object-cover"
-            />
+            <div className="relative w-full md:w-1/3 max-w-sm">
+              <img
+                src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
+                alt="Claudia Silva - CEO"
+                className="rounded-lg shadow-lg w-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300"
+                style={{
+                  filter: 'brightness(1.1)',
+                  aspectRatio: '3/4',
+                  objectFit: 'cover',
+                  backgroundColor: 'transparent'
+                }}
+              />
+            </div>
             
             <div className="space-y-6">
               <h2 className="text-3xl font-semibold text-gray-800">
