@@ -38,7 +38,7 @@ const About = () => {
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
                 alt="Claudia Silva - CEO"
-                className="relative rounded-lg shadow-sm w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-105 grayscale hover:grayscale-0"
+                className="relative rounded-lg shadow-sm w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-105 [filter:grayscale(100%)] hover:[filter:grayscale(0%)]"
                 style={{
                   maxHeight: '500px',
                   objectFit: 'cover',
