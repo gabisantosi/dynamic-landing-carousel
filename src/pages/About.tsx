@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
+import { LinkedinIcon } from 'lucide-react';
 
 const About = () => {
   const { t } = useTranslation();
@@ -12,21 +13,24 @@ const About = () => {
       <Header />
       <main className="container mx-auto px-4 py-12">
         <article className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#478EA7] mb-8 text-center">
-            Kure Saúde
-          </h1>
+          <div className="text-center mb-16">
+            <h1 className="text-5xl md:text-6xl font-bold text-[#478EA7] mb-4">
+              Kure Saúde
+            </h1>
+            <div className="w-24 h-1 bg-[#478EA7] mx-auto rounded-full"></div>
+          </div>
           
-          <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
-            <div className="relative w-full md:w-1/3 max-w-sm">
+          <div className="flex flex-col md:flex-row gap-12 items-center mb-16">
+            <div className="relative w-full md:w-1/2 max-w-md group">
+              <div className="absolute inset-0 bg-[#478EA7] transform -rotate-6 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
                 alt="Claudia Silva - CEO"
-                className="rounded-lg shadow-lg w-full object-cover transition-all duration-300"
+                className="relative rounded-lg shadow-xl w-full object-cover transition-all duration-500 transform group-hover:scale-105"
                 style={{
                   filter: 'grayscale(100%) contrast(1.2) brightness(1.1)',
                   aspectRatio: '3/4',
                   objectFit: 'cover',
-                  backgroundColor: 'transparent'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.filter = 'none';
@@ -37,31 +41,32 @@ const About = () => {
               />
             </div>
             
-            <div className="space-y-6">
-              <h2 className="text-3xl font-semibold text-gray-800">
+            <div className="space-y-6 md:w-1/2">
+              <h2 className="text-4xl font-bold text-gray-800 mb-2">
                 Claudia Silva
               </h2>
-              <p className="text-xl text-gray-600 font-light">
+              <p className="text-2xl text-[#478EA7] font-light mb-4">
                 CEO & Fundadora da Kure Saúde
               </p>
               <a 
                 href="https://www.linkedin.com/in/claudia-santos-silva/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#478EA7] hover:text-[#3A7A91] flex items-center gap-2"
+                className="inline-flex items-center gap-2 text-[#478EA7] hover:text-[#3A7A91] bg-blue-50 hover:bg-blue-100 px-4 py-2 rounded-full transition-all duration-300"
               >
-                LinkedIn Profile
+                <LinkedinIcon size={20} />
+                <span>LinkedIn Profile</span>
               </a>
             </div>
           </div>
 
-          <Card className="mb-8">
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-800">
+          <Card className="mb-12 overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300">
+            <CardContent className="p-8">
+              <h3 className="text-3xl font-bold mb-6 text-gray-800 border-b border-[#478EA7] pb-4">
                 Uma Visão Transformadora para a Saúde Digital
               </h3>
-              <div className="space-y-4 text-gray-600">
-                <p>
+              <div className="space-y-6 text-gray-600 leading-relaxed">
+                <p className="text-lg">
                   Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
                   Claudia Santos Silva tem liderado a revolução na saúde digital brasileira através da 
                   Kure Saúde. Sua jornada começou com um propósito claro: tornar a saúde mais acessível 
@@ -77,10 +82,13 @@ const About = () => {
                   projetos que não apenas melhoram a eficiência operacional, mas também transformam a 
                   experiência do paciente e dos profissionais de saúde.
                 </p>
+              </div>
 
-                <h4 className="text-xl font-semibold mt-6 mb-4 text-gray-800">
-                  Compromisso com a Excelência
-                </h4>
+              <div className="mt-12 space-y-8">
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <h4 className="text-2xl font-bold mb-4 text-[#478EA7]">
+                    Compromisso com a Excelência
+                  </h4>
                 <p>
                   A visão de Claudia para a Kure Saúde é baseada em três pilares fundamentais: inovação 
                   tecnológica, excelência em gestão de projetos e foco no cliente. Esta abordagem tem 
@@ -92,15 +100,12 @@ const About = () => {
                   prática, sempre mantendo o foco em resultados mensuráveis e impacto positivo para todos 
                   os stakeholders envolvidos.
                 </p>
-                <p>
-                  Além de sua atuação como CEO, Claudia é uma defensora ativa da transformação digital na 
-                  saúde, compartilhando frequentemente seus conhecimentos e experiências em eventos do setor 
-                  e contribuindo para o desenvolvimento do ecossistema de healthtech no Brasil.
-                </p>
+                </div>
 
-                <h4 className="text-xl font-semibold mt-6 mb-4 text-gray-800">
-                  Do Rio de Janeiro para o Mundo
-                </h4>
+                <div className="bg-gradient-to-r from-blue-50 to-white p-6 rounded-lg">
+                  <h4 className="text-2xl font-bold mb-4 text-[#478EA7]">
+                    Do Rio de Janeiro para o Mundo
+                  </h4>
                 <p>
                   Fundada no Rio de Janeiro, Brasil, a Kure Saúde nasceu com uma visão clara de 
                   transformar a saúde digital brasileira. Sob a liderança visionária de Claudia Santos Silva, 
@@ -120,6 +125,7 @@ const About = () => {
                   presença global nos permite compartilhar conhecimentos, tecnologias e melhores práticas,
                   fortalecendo nossa missão de transformar a saúde digital em escala global.
                 </p>
+                </div>
               </div>
             </CardContent>
           </Card>
