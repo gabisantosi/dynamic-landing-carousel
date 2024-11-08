@@ -4,11 +4,13 @@ import { Button } from '@/components/ui/button';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import CalendarModal from './CalendarModal';
 
 const Hero = () => {
   const { t } = useTranslation();
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
 
   const slides = [
     {
@@ -68,7 +70,7 @@ const Hero = () => {
                   </p>
                   <Button 
                     size="lg" 
-                    onClick={() => window.open('https://calendly.com/your-calendly-link', '_blank')}
+                    onClick={() => setIsCalendarOpen(true)}
                     className="w-full sm:w-auto text-lg py-6 px-8"
                   >
                     {t('scheduleDemo')}
@@ -102,6 +104,10 @@ const Hero = () => {
           />
         ))}
       </div>
+      <CalendarModal 
+        isOpen={isCalendarOpen}
+        onClose={() => setIsCalendarOpen(false)}
+      />
     </section>
   );
 };
