@@ -10,7 +10,6 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-// Separate components to reduce file size
 const FlagImage = ({ lang }: { lang: string }) => {
   const [flagImageError, setFlagImageError] = React.useState(false);
 
