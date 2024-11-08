@@ -60,39 +60,11 @@ const About = () => {
                   sistema de saúde nórdico.
                 </p>
                 <p>
-                  Esta expansão internacional marca um novo capítulo na história da empresa, 
-                  possibilitando parcerias estratégicas com instituições de saúde europeias e o 
-                  desenvolvimento de projetos que beneficiam tanto o mercado brasileiro quanto o 
-                  internacional.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="p-6">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-                Projetos Internacionais
-              </h3>
-              <div className="space-y-4 text-gray-600">
-                <p>
-                  Nossa presença internacional tem se fortalecido através de projetos inovadores que 
-                  conectam diferentes realidades da saúde global. A expertise desenvolvida no Brasil, 
-                  combinada com a eficiência dos sistemas de saúde escandinavos, tem permitido à 
-                  Kure Saúde criar soluções verdadeiramente globais.
-                </p>
-                <p>
-                  Entre nossos projetos internacionais mais recentes, destacam-se parcerias com 
-                  hospitais suecos para implementação de sistemas de telemedicina avançados, 
-                  colaborações com startups de healthtech europeias e o desenvolvimento de 
-                  plataformas multilíngues que facilitam o intercâmbio de conhecimentos entre 
-                  profissionais de saúde de diferentes países.
-                </p>
-                <p>
-                  Nossa visão é continuar expandindo nossa presença global, mantendo o compromisso 
-                  com a excelência e inovação que nos trouxe até aqui, sempre buscando criar 
-                  soluções que possam beneficiar pacientes e profissionais de saúde em qualquer 
-                  parte do mundo.
+                  Nossa expansão internacional marca um momento significativo para a empresa. Com escritórios
+                  no Brasil e na Suécia, estamos construindo pontes entre diferentes culturas e sistemas de saúde,
+                  criando soluções que beneficiam tanto o mercado latino-americano quanto o europeu. Esta
+                  presença global nos permite compartilhar conhecimentos, tecnologias e melhores práticas,
+                  fortalecendo nossa missão de transformar a saúde digital em escala global.
                 </p>
               </div>
             </CardContent>
