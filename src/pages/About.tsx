@@ -89,8 +89,8 @@ const About = () => {
                 <h3 className="text-3xl font-bold mb-2 text-gray-800 border-b border-[#478EA7] pb-4">
                   Uma Visão Transformadora para a Saúde Digital
                 </h3>
-                <p className="text-xl text-[#478EA7] italic mb-6">
-                  Inovação e excelência na transformação digital da saúde
+                <p className="text-2xl font-bold text-[#478EA7] mb-6">
+                  Inovação e liderança na transformação digital da saúde
                 </p>
                 <div className="space-y-6 text-gray-600 leading-relaxed">
                   <p className="text-lg">
