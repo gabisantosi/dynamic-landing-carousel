@@ -37,7 +37,7 @@ const About = () => {
               <div className="absolute inset-0 bg-[#478EA7]/10 transform rotate-3 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
-                alt="Claudia - CEO"
+                alt="Claudia Silva - CEO"
                 className="relative rounded-lg shadow-sm w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-105 [filter:grayscale(100%)] hover:[filter:grayscale(0%)]"
                 style={{
                   maxHeight: '400px',
@@ -55,7 +55,7 @@ const About = () => {
               <div className="relative">
                 <Quote className="absolute -left-8 -top-8 text-[#478EA7]/20 w-16 h-16" />
                 <h2 className="text-4xl font-bold text-gray-800 mb-2">
-                  Claudia
+                  Claudia Silva
                 </h2>
                 <p className="text-xl md:text-2xl text-[#478EA7] font-light mb-4 whitespace-nowrap">
                   CEO & Fundadora da Kure Saúde
