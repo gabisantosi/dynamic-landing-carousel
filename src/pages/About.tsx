@@ -37,7 +37,7 @@ const About = () => {
               <div className="absolute inset-0 bg-[#478EA7]/10 transform rotate-3 rounded-lg transition-all duration-300 group-hover:rotate-0"></div>
               <img
                 src="https://i.ibb.co/xgPqrxR/claudia-santos-silva.jpg"
-                alt="Claudia Silva - CEO"
+                alt="Claudia - CEO"
                 className="relative rounded-lg shadow-sm w-full h-auto object-cover transition-all duration-500 transform group-hover:scale-105 [filter:grayscale(100%)] hover:[filter:grayscale(0%)]"
                 style={{
                   maxHeight: '400px',
@@ -55,7 +55,7 @@ const About = () => {
               <div className="relative">
                 <Quote className="absolute -left-8 -top-8 text-[#478EA7]/20 w-16 h-16" />
                 <h2 className="text-4xl font-bold text-gray-800 mb-2">
-                  Claudia Silva
+                  Claudia
                 </h2>
                 <p className="text-xl md:text-2xl text-[#478EA7] font-light mb-4 whitespace-nowrap">
                   CEO & Fundadora da Kure Saúde
@@ -92,7 +92,7 @@ const About = () => {
                 <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
                   <p>
                     Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
-                    Claudia Santos Silva tem liderado a revolução na saúde digital brasileira através da 
+                    Claudia tem liderado a revolução na saúde digital brasileira através da 
                     Kure Saúde. Sua jornada começou com um propósito claro: tornar a saúde mais acessível 
                     e eficiente através da tecnologia.
                   </p>
@@ -127,7 +127,7 @@ const About = () => {
                   </h4>
                   <p>
                     Fundada no Rio de Janeiro, Brasil, a Kure Saúde nasceu com uma visão clara de 
-                    transformar a saúde digital brasileira. Sob a liderança visionária de Claudia Santos Silva, 
+                    transformar a saúde digital brasileira. Sob a liderança visionária de Claudia, 
                     a empresa rapidamente se estabeleceu como referência no mercado nacional e agora está 
                     expandindo suas operações internacionalmente, com foco inicial no mercado europeu.
                   </p>
