@@ -12,21 +12,21 @@ const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-blue-50">
       <Header />
-      <main className="container mx-auto px-4 py-12">
+      <main className="container mx-auto px-4 py-8 md:py-12">
         <article className="max-w-5xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#478EA7] mb-4 whitespace-nowrap">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#478EA7] mb-4 px-2">
               Kure Saúde
             </h1>
             <div className="w-32 h-1 bg-[#478EA7] mx-auto mb-4"></div>
           </motion.div>
 
-          <div className="flex flex-col md:flex-row gap-6 items-center mb-16">
+          <div className="flex flex-col md:flex-row gap-6 items-center mb-8 md:mb-16 px-4">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -50,25 +50,25 @@ const About = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="space-y-6 md:w-1/2"
+              className="space-y-4 md:space-y-6 md:w-1/2"
             >
               <div className="relative">
-                <Quote className="absolute -left-8 -top-8 text-[#478EA7]/20 w-16 h-16" />
-                <h2 className="text-4xl font-bold text-gray-800 mb-2">
+                <Quote className="absolute -left-4 md:-left-8 -top-4 md:-top-8 text-[#478EA7]/20 w-12 md:w-16 h-12 md:h-16" />
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
                   Claudia Silva
                 </h2>
-                <p className="text-xl md:text-2xl text-[#478EA7] font-light mb-4 whitespace-nowrap">
+                <p className="text-lg md:text-xl lg:text-2xl text-[#478EA7] font-light mb-4">
                   CEO & Fundadora da Kure Saúde
                 </p>
               </div>
-              <p className="text-lg text-gray-600 italic">
+              <p className="text-base md:text-lg text-gray-600 italic">
                 "Nossa missão é transformar a saúde digital, tornando-a mais acessível e eficiente para todos."
               </p>
               <a 
                 href="https://www.linkedin.com/in/claudia-santos-silva/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#478EA7] hover:text-[#3A7A91] bg-blue-50 hover:bg-blue-100 px-6 py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg"
+                className="inline-flex items-center gap-2 text-[#478EA7] hover:text-[#3A7A91] bg-blue-50 hover:bg-blue-100 px-4 md:px-6 py-2 md:py-3 rounded-full transition-all duration-300 shadow-md hover:shadow-lg text-sm md:text-base"
               >
                 <LinkedinIcon size={20} />
                 <span>Conecte-se no LinkedIn</span>
@@ -81,15 +81,15 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <Card className="mb-12 overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300">
-              <CardContent className="p-8">
-                <h3 className="text-3xl font-bold mb-6 text-gray-800">
+            <Card className="mb-8 md:mb-12 overflow-hidden bg-white/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-4 md:p-8">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-gray-800">
                   Uma Visão Transformadora para a Saúde Digital
                 </h3>
-                <h4 className="text-2xl text-[#478EA7] mb-6">
+                <h4 className="text-xl md:text-2xl text-[#478EA7] mb-4 md:mb-6">
                   Inovação e liderança na transformação digital da saúde
                 </h4>
-                <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
+                <div className="space-y-4 md:space-y-6 text-gray-600 leading-relaxed text-base md:text-lg">
                   <p>
                     Com mais de duas décadas de experiência em gestão de projetos e transformação digital, 
                     Claudia tem liderado a revolução na saúde digital brasileira através da 

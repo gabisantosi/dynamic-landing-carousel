@@ -80,10 +80,10 @@ const Header = () => {
 
   return (
     <header className="bg-background border-b border-border">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-3 md:py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <Logo />
-          <span className="text-xl font-semibold text-primary">Kure Saúde</span>
+          <span className="text-lg md:text-xl font-semibold text-primary">Kure Saúde</span>
         </Link>
         <nav className="hidden md:flex space-x-4">
           <Link to="/" className="text-foreground hover:text-primary transition-colors">{t('home')}</Link>
@@ -103,11 +103,12 @@ const Header = () => {
             variant="ghost"
             size="icon"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            className="h-8 w-8 md:h-10 md:w-10"
           >
             {theme === "light" ? (
-              <Moon className="h-5 w-5" />
+              <Moon className="h-4 w-4 md:h-5 md:w-5" />
             ) : (
-              <Sun className="h-5 w-5" />
+              <Sun className="h-4 w-4 md:h-5 md:w-5" />
             )}
           </Button>
           <DropdownMenu>
@@ -129,8 +130,13 @@ const Header = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? <X /> : <Menu />}
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="md:hidden h-8 w-8" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>

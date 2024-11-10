@@ -55,7 +55,7 @@ const Hero = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative h-[70vh] min-h-[400px] overflow-hidden bg-gradient-to-b from-blue-50/80 to-white/90">
+    <section className="relative h-[60vh] md:h-[70vh] min-h-[400px] overflow-hidden bg-gradient-to-b from-blue-50/80 to-white/90">
       <div className="embla h-full" ref={emblaRef}>
         <div className="embla__container h-full">
           {slides.map((slide, index) => (
@@ -66,17 +66,17 @@ const Hero = () => {
                 className="w-full h-full object-cover opacity-90"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/60 to-black/60 backdrop-blur-[2px] flex items-center justify-center">
-                <div className="text-center max-w-[90%] lg:max-w-6xl mx-auto px-4 space-y-6">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-tight whitespace-nowrap">
+                <div className="text-center max-w-[95%] md:max-w-[90%] lg:max-w-6xl mx-auto px-2 md:px-4 space-y-4 md:space-y-6">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight tracking-tight">
                     {t(slide.title)}
                   </h1>
-                  <p className="text-lg md:text-xl text-white/90 leading-relaxed whitespace-nowrap mx-auto">
+                  <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed mx-auto">
                     {t(slide.subtitle)}
                   </p>
                   <Button 
                     size="lg" 
                     onClick={() => setIsCalendarOpen(true)}
-                    className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 mt-4 text-lg px-8 py-6 rounded-full"
+                    className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 mt-4 text-base md:text-lg px-6 md:px-8 py-4 md:py-6 rounded-full"
                   >
                     {t('scheduleDemo')}
                   </Button>
